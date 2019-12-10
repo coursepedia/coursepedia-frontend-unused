@@ -1,18 +1,18 @@
 import React from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 
 export default function Footer() {
 	return (
 		<div className='footer'>
 			<Card className="text-center">
-				<Card.Header>Featured</Card.Header>
+				<Card.Header>Featured by :</Card.Header>
 				<Card.Body>
-					<Card.Title>Special title treatment</Card.Title>
-					<Card.Text>With supporting text below as a natural lead-in to additional content.</Card.Text>
-					<Button variant="primary">Go somewhere</Button>
+					<Card.Text>Abdul Latief</Card.Text>
+					<Card.Text>Ega Sharfina</Card.Text>
+					<Card.Text>Danny</Card.Text>
 				</Card.Body>
-				<Card.Footer className="text-muted">2 days ago</Card.Footer>
+				<Card.Footer className="text-muted">© 2019 Copyright: GIVE AN ANCHOR TO REFER TO OUR WEBSITE</Card.Footer>
 			</Card>
 		</div>
 	);

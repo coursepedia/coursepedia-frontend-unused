@@ -4,10 +4,18 @@
 
 .homepage{
   width:100%;
-  height: 100vh;
+  height: 70vh
   /* padding:40vh; */
 }
 
 .about{
+  height: 100vh;
+}
+
+.navbar{
+  /* background-color: blueviolet; */
+}
+
+.course{
   height: 100vh;
 }

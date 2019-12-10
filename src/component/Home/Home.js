@@ -1,16 +1,20 @@
 import React from "react";
-import { Jumbotron, Container } from "react-bootstrap";
-
+import { Button, Container, Col } from "react-bootstrap";
+import banner from "./banner_img.png";
 
 export default function Home() {
 	return (
-		<div className='homepage'>
-			<Jumbotron fluid>
-				<Container>
-					<h1>Fluid jumbotron</h1>
-					<p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-				</Container>
-			</Jumbotron>
-		</div>
+		<Container className="homepage d-flex">
+			<img src={banner} alt="" style={{ height: "90%", width: "50%" }} />
+			<Col className="align-self-center">
+				<h5>Every child yearns to learn</h5>
+				<h1>Making Your Childs World Better</h1>
+				<p>Replenish seasons may male hath fruit beast were seas saw you arrie said man beast whales his void unto last session for bite. Set have great you'll male grass yielding yielding man</p>
+				<Button variant="success">View Course</Button>
+				<br />
+				<br />
+				<Button variant="warning">Log In</Button>
+			</Col>
+		</Container>
 	);
 }

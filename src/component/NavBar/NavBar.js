@@ -1,19 +1,40 @@
 import React from "react";
-import { Button, Navbar, Nav, Form, FormControl } from "react-bootstrap";
+import { Button, Navbar, Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import Icon from './books.png'
 
 export default function NavBar() {
 	return (
-		<Navbar bg="light" variant="light">
-			<Navbar.Brand className="mr-auto" href="#home">
-				Navbar
-			</Navbar.Brand>
-			<Nav className="d-flex justify-content-center">
-				<Nav.Link href="#home">Home</Nav.Link>
-				<Nav.Link href="#features">About</Nav.Link>
-				<Nav.Link href="#pricing">Courses</Nav.Link>
-				<Button variant="primary">Log In</Button>
-				<Button variant="outline-primary">Register</Button>
-			</Nav>
+		<Navbar className='navbar' variant="dark" sticky="top">
+			<Container>
+				<Row>
+					<Col>
+						<Link to="/"><img src={Icon} alt=""/></Link>
+					</Col>
+				</Row>
+
+				<Row className="d-flex text-center">
+					<Col className="align-self-center">
+						<Link  to="/">Home</Link>
+					</Col>
+					<Col className="align-self-center">
+						<Link to="/about">About</Link>
+					</Col>
+					<Col className="align-self-center">
+						<Link to="/course">Course's Category</Link>
+					</Col>
+					<Col className="align-self-center">
+						<Link to="/login">
+							<Button variant="primary">Log In</Button>
+						</Link>
+					</Col>
+					<Col className="align-self-center">
+						<Link to="/register">
+							<Button variant="outline-primary">Register</Button>
+						</Link>
+					</Col>
+				</Row>
+			</Container>
 		</Navbar>
 	);
 }
